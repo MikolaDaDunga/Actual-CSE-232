@@ -32,7 +32,7 @@ std::set<std::string> ReplacementCensor(std::string inFileName, std::string outF
         for (std::map<std::string, std::string>::iterator iter = dataMap.begin(); iter != dataMap.end(); iter++) {
             auto loc = currentLine.find((*iter).first);
             if (loc != std::string::npos) {
-                currentLine.rep
+                //currentLine.rep
                 currentLine.erase(std::find(currentLine.begin(), currentLine.end(), (*iter).first), currentLine.end());
             }
         }
